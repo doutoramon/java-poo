@@ -15,11 +15,18 @@ public class Livro {
 		System.out.println("Descrocao: "+descricao);
 		System.out.println("Valor: "+valor);
 		System.out.println("Isbn: "+isbn);
-		autor.mostrarDetalhes();
-		System.out.println("--------------------");
+
+		if(this.temAutor()) {
+			autor.mostrarDetalhes();
+		}
+		System.out.println("-----------------------------------");
 	}
 	
 	public void aplicaDescontoDe(double porcentagem) {
-		valor -= valor * 0.1;
+		this.valor -= this.valor * porcentagem;
+	}
+
+	boolean temAutor() {
+		return this.autor != null;
 	}
 }
