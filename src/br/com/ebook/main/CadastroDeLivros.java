@@ -15,7 +15,7 @@ public class CadastroDeLivros {
 		Livro livro = new Livro();
 		livro.nome = "Java 8 Pratico";
 		livro.descricao = "Novos Recursos da linguagem";
-		livro.valor = 59.90;
+		livro.adicionaValor(59.90);
 		livro.isbn = "8002-89-22";
 		livro.autor = autor;
 		
@@ -30,7 +30,7 @@ public class CadastroDeLivros {
 		Livro outroLivro = new Livro();
 		outroLivro.nome = "Logica de Programacao";
 		outroLivro.descricao = "Crie seus primeiros programas";
-		outroLivro.valor = 39.90;
+		outroLivro.adicionaValor(39.90);
 		outroLivro.isbn = "0800-777-7000";
 		
 		outroLivro.autor = outroAutor;
